@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="header-title">Registration Form</h1>
+        <h2 style="color: red">Text box yang berwarna merah wajib diisi</h1>
+    </header>
+    <section>
+        <h3> Data Diri</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="Nama" placeholder="Text Input" required class="mandatory">
+            
+            <label for="email">Email:</label>
+            <input type="Email" placeholder="Email Input" required class="mandatory">
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="phone-number" placeholder="Text Input" required class="mandatory">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female
+            <br>
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="gym"> GYM
+            <input type="checkbox" name="hobby" value="coding"> Coding
+            <input type="checkbox" name="hobby" value="music"> Music
+            <input type="checkbox" name="hobby" value="traveling"> Traveling
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required class="mandatory">
+
+            <label for="program">Program of Study:</label>
+            <select id="program" required class="mandatory">
+                <option value="">Select Program</option>
+                <option value="accounting">Accounting</option>
+                <option value="finance">Finance</option>
+                <option value="information-systems">Information Systems</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="management">Management</option>
+            </select>
+
+            <label for="address">Full Address:</label>
+            <textarea id="address" placeholder="Enter your address" required class="mandatory"></textarea>
+
+
+            <button type="submit" class="submit">Submit</button>
+
+        </form>
+
+    </section>
+</body>
+</html>

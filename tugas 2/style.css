@@ -1,0 +1,61 @@
+#header-title{
+    margin: 5px;
+}
+
+/* Styling umum input, select, textarea */
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* Radio button dan checkbox dikecilkan lebarnya */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Jika field required belum diisi → border merah */
+input:required:invalid,
+select:required:invalid,
+textarea:required:invalid {
+  border: 2px solid red;
+  background-color: #ffecec;
+}
+
+/* Jika field sudah valid → border hijau */
+input:required:valid,
+select:required:valid,
+textarea:required:valid {
+  border: 2px solid green;
+  background-color: #f0fff0;
+}
+
+/* Textarea khusus lebih tinggi */
+textarea {
+  min-height: 80px;
+  resize: vertical; /* biar bisa diresize manual */
+}
+
+/* Tombol submit */
+.submit {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit:hover {
+  background-color: #0056b3;
+}
