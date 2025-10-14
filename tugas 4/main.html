@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Dua Angka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Kalkulator Dua Angka</h2>
+        <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+        <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+        <select id="operator">
+            <option value="+">Tambah (+)</option>
+            <option value="-">Kurang (-)</option>
+            <option value="*">Kali (×)</option>
+            <option value="/">Bagi (÷)</option>
+        </select>
+        <button onclick="hitung()">=</button>
+        <div class="hasil">
+            <p>Hasil: <span id="output">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
