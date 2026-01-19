@@ -4,7 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Dua Angka</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 2px solid #edf2f7;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #4a5568;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        input[type="number"]:focus, select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .hasil {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f7fafc;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .hasil p {
+            font-size: 16px;
+            color: #718096;
+            margin: 0;
+        }
+
+        #output {
+            display: block;
+            font-size: 28px;
+            font-weight: 800;
+            color: #2d3748;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="calculator">
@@ -19,9 +113,12 @@
         </select>
         <button onclick="hitung()">=</button>
         <div class="hasil">
-            <p>Hasil: <span id="output">0</span></p>
+            <p>Hasil Akhir:</p>
+            <span id="output">0</span>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
